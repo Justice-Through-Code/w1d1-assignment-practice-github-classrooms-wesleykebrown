@@ -14,13 +14,14 @@ def is_happy_hour(user_date, user_time):
         return 17 <= user_time.hour < 19  # Happy hour between 5 PM and 7 PM
 
 def is_christmas(date):
-    #ENTER CODE HERE
+    return date.month == 12 and date.day == 25
 
 def is_easter(date):
     return date == calc_easter_sunday(date.year)
 
 def is_sunday(date):
-    #ENTER CODE HERE
+    return date.weekday() == 6
+    
 
 def calc_easter_sunday(year):
     a = year % 19
